@@ -14,4 +14,4 @@ Asia/Seoul
 Asia/Bangkok
 ```
 
-![alt text](https://raw.githubusercontent.com/santikzz/world-clocks/main/screenshot.png)
+![alt text](screenshot.png)
