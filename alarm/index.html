@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <audio id="buzzer" src="alarm.ogg" type="audio/ogg"></audio>
+
+    <main>
+
+
+        <div class="container">
+
+
+            <div class="clock">
+                <div class="time-row">
+                    <div class="time">
+                        <label class="lbl-time">00:00:00</label>
+                        <div class="blinker blinker_a">.</div>
+                        <div class="blinker blinker_b">.</div>
+                    </div>
+                    
+                    <div class="left">
+                        <label class="alarm hidden" id="lbl-alarm"><i class="fa-regular fa-bell"></i><span class="lbl-alarm" id="alarm-time">00:00pm</span></label>
+                        <label class="lbl-noon">#noon</label>
+                    </div>
+                </div>
+                <div class="details">
+                    <label class="lbl-details">#detail</label>
+                    <!-- <i class="fa-regular fa-sun"></i> -->
+                </div>
+            </div>
+
+            <div class="set-alarm">
+                
+                <div class="selector">
+                    <label class="number" id="alarm-time-hour">00</label>
+                    <div class="input-group">
+                        <button class="btn" id="time-hour-add"><i class="fa-solid fa-sort-up"></i></button>
+                        <button class="btn" id="time-hour-dec"><i class="fa-solid fa-sort-down"></i></button>
+                    </div>
+                    
+                </div>
+                <label class="text">:</label>
+                <div class="selector">
+                    <label class="number" id="alarm-time-mins">00</label>
+                    <div class="input-group">
+                        <button class="btn" id="time-mins-add"><i class="fa-solid fa-sort-up"></i></button>
+                        <button class="btn" id="time-mins-dec"><i class="fa-solid fa-sort-down"></i></button>
+                    </div>
+                </div>
+
+                <button class="btn-set" id="set-alarm">SET</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
